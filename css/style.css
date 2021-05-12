@@ -1,3 +1,8 @@
+:root {
+  --orange-color: #ff6f47;
+  --teal-color: #1bd8a9;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +16,7 @@ body {
 }
 header {
   font-size: 2rem;
+  margin-top: 2rem;
 }
 
 header,
@@ -28,13 +34,13 @@ form button {
   background: white;
 }
 form button {
-  color: #ff6f47;
+  color: var(--orange-color);
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #ff6f47;
+  background: var(--orange-color);
   color: white;
 }
 .todo-container {
@@ -67,7 +73,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
+  background: var(--orange-color);
   color: white;
   border: none;
   padding: 1rem;
@@ -75,7 +81,7 @@ form button:hover {
   font-size: 1rem;
 }
 .complete-btn {
-  background: rgb(11, 212, 162);
+  background: var(--teal-color);
 }
 .todo-item {
   padding: 0rem 0.5rem;
@@ -87,11 +93,11 @@ form button:hover {
 }
 
 .fall {
-  transform: translateY(10rem) rotateZ(20deg);
+  transform: translateY(15rem) rotateZ(160deg);
   opacity: 0;
 }
 
-.completed {
+.complete {
   text-decoration: line-through;
   opacity: 0.5;
 }
@@ -115,7 +121,7 @@ select {
   overflow: hidden;
 }
 select {
-  color: #ff6f47;
+  color: var(--orange-color);
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
@@ -127,7 +133,7 @@ select {
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #ff6f47;
+  background: var(--orange-color);
   cursor: pointer;
   pointer-events: none;
 }
